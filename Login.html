@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-us[회원가입]</title>
+    <!-- bootstrap min.css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>       
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<div class="wrap">
+    <header class="header" id="header">
+        <div class="left-nav">
+          <ul class="nav">
+            <li>
+              <a href="#"> 
+                  <img src="img/icon/hamburger-1.png" alt="메뉴">
+              </a>
+            </li>
+            <li>
+              <a href="index.html"> 
+                  <img src="img/icon/home-6.png" alt="홈">
+              </a>
+            </li>
+            <li>
+              <a href="#"> 
+                  <img src="img/icon/calendar-3.png" alt="캘린더">
+              </a>
+            </li>
+          </ul>              
+        </div>
+        <div class="right-nav">
+          <ul class="util clear">
+            <li>
+              <a href="login.html"> 
+                  <img src="img/icon/user.png" alt="마이페이지">
+              </a>
+            </li>
+            <li>
+              <a href="#"> 
+                  <img src="img/icon/settings-2.png" alt="설정">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </header>
+    <div class="bg_header"></div>
+    <!-- //header -->
+
+    <!-- 로그인 -->
+    <div class="container mt-5">
+        <h2 class="login-title">로그인</h2>
+
+    <!-- swiper -->
+    <div class="swiper login-Swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide LoginSlide1">
+                <div class="Logininner-slide1 login-slide">
+                    <h2>We support your reading.</h2>
+                    <figure></figure>
+                    <span>
+                        감명 깊은 문구, <br>
+                        오랫동안 기억하고 싶은 내용을 <br>
+                        기록할 수 있는 독서 앱입니다 
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide LoginSlide2">
+                <div class="Logininner-slide2 login-slide">
+                <h2>Quality of life will improve.</h2>
+                <figure></figure>
+                <span>
+                    BookShelf를 이용하여, <br>
+                    나만의 책장을 만들어보세요.
+                </span>
+                </div>
+            </div>
+            <div class="swiper-slide LoginSlide3">
+                <div class="Logininner-slide3 login-slide">
+                        <h2>We hope you enjoy reading.</h2>
+                        <figure></figure>
+                        <span>
+                        책속에 문장이나 생각등을<br>
+                        기록해보세요
+                        </span>
+                        <br>
+                    </a>
+                </div>
+            </div>    
+        </div>
+    <div class="swiper-button-next loginSW-btnL"></div>
+    <div class="swiper-button-prev loginSW-btnR"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+<!-- //swiper -->
+  <div class="container">
+    <div class="login-inputBox p-5">
+        <div class="essential-element mb-3">
+            <input type="email" class="form-control mail-form" id="registEmail" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" >
+        </div>
+        <div class="essential-element mb-3">
+            <input type="password" class="form-control pw-form" id="registPassword" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'" >
+            <p class="pw-info">숫자/문자 6글자 이상</p>
+        </div>
+    </div>
+    <div class="login-buttonArea">
+        <button onclick="location.href='JoinUs.html'" type="submit" class="btn btn-membership d-grid col-6 mb-1 mx-auto" id="membership">회원가입</button>
+        <button type="submit" class="btn btn-login d-grid col-6 mx-auto" id="loginButton">로그인</button>
+        <button type="submit" class="btn btn-logout d-grid col-6 mt-1 mb-5 mx-auto" id="logoutButton">로그아웃</button>
+    </div>
+</div>
+    <!-- //로그인 -->
+
+
+    
+    
+    
+    
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".login-Swiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+    </script>
+    
+    <script src="js/setting.js"></script>    
+    <script>
+       //로그인
+       $('#loginButton').on('click', function() {
+            let loginEmail = $('#loginEmail').val();
+            let loginPwd = $('#loginPassword').val();
+
+            firebase.auth().signInWithEmailAndPassword(loginEmail, loginPwd).then((result)=> {
+                console.log(result.user);
+                confirm("로그인되었습니다. 홈화면으로 이동합니다.");
+                window.location.href='index.html'
+            })
+        })
+        
+        //로그아웃
+        $('#logoutButton').on('click', function() {
+            firebase.auth().signOut();
+            confirm("로그아웃되었습니다");
+            window.location.reload(); //새로고침
+        })
+    </script>
+</body>
+</html>

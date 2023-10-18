@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index[홈]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="wrap">
+<!-- 메인이미지 -->
+<header class="header" id="header">
+    <div class="left-nav">
+      <ul class="nav">
+        <li>
+          <a href="#"> 
+              <img src="img/icon/hamburger-1.png" alt="메뉴">
+          </a>
+        </li>
+        <li>
+          <a href="index.html"> 
+              <img src="img/icon/home-6.png" alt="홈">
+          </a>
+        </li>
+        <li>
+          <a href="#"> 
+              <img src="img/icon/calendar-3.png" alt="캘린더">
+          </a>
+        </li>
+      </ul>              
+    </div>
+    <div class="right-nav">
+      <ul class="util clear">
+        <li>
+          <a href="login.html"> 
+              <img src="img/icon/user.png" alt="마이페이지">
+          </a>
+        </li>
+        <li>
+          <a href="#"> 
+              <img src="img/icon/settings-2.png" alt="설정">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> 
+</header>
+<div class="bg_header"></div>
+<!-- //header -->
+
+<div class="index-container container clear">
+
+    <div class="logo-area">
+      <h1 class="logo"><a href="index.html"><img src="img/icon/logo-dark.png" alt="로고"></a></h1>
+    </div>
+
+    <form class="d-flex search-area" role="search">
+      <input class="form-control me-2 input-group-sm search-txt" type="search" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'" aria-label="Search">
+      <button class="btn btn-outline-warning search-btn" type="submit"><img src="img/icon/search.png" alt=""></button>
+    </form>  
+
+  <!-- carousel slide -->            
+  <div id="carouselExampleCaptions" class="carousel slide mt-5 ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+    <!-- carousel-inner -->  
+      <div class="index-carousel carousel-item active">
+        <img src="img/bg/01jonatas-tinoco.png" class="index-carousel-img d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>We support your reading.</h5>
+          <p>감명 깊은 문구, <br>
+            오랫동안 기억하고 싶은 내용을 <br>
+            기록할 수 있는 독서 앱입니다</p>
+        </div>
+      </div>
+      <div class="index-carousel carousel-item">
+        <img src="img/bg/02mhmd-sedky.png" class="index-carousel-img d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Quality of life will improve.</h5>
+          <p>
+            BookShelf를 이용하여, <br>
+            나만의 책장을 만들어보세요.
+          </p>
+        </div>
+      </div>
+      <div class="index-carousel carousel-item">
+        <img src="img/bg/03waseem-khan.png" class="index-carousel-img d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>We hope you enjoy reading.</h5>
+          <p>
+            책속에 문장이나 생각등을<br>
+            기록해보세요
+          </p>
+        </div>
+      </div>
+      <div class="index-carousel carousel-item">
+        <img src="img/bg/04avesta-rezaeizadeh.png" class="index-carousel-img d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Dream is come True</h5>
+          <p>
+            책을 읽으며 떠오른 생각과<br> 
+            감정을 기록하며 당신의 꿈을 향해 <br>
+            한걸음더 나아갈 수 있길바랍니다.
+          </p>
+        </div>
+      </div>
+      <div class="index-carousel carousel-item">
+        <img src="img/bg/05christina-deravedisian.png" class="index-carousel-img d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Let's get started</h5>
+          <p>
+            당신만의 스토리를 담은 특별한 책장이<br>
+            당신의 삶에 지표가 되어 줄 것입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- carousel-inner -->
+    
+    <!-- carousel-cntrolbtn -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!--// carousel-cntrolbtn -->
+  </div>      
+  <!-- //carousel slid -->      
+
+  <!-- 현재전시 이미지 -->
+
+
+
+
+
+
+
+
+  <div class="imgList">
+    <div class="row row-cols-1 row-cols-md-3 mt-5 g-4">
+        <div class="col">
+            <div class="card h-100">
+            <a href="bookInfo.html" class="p-5">
+              <img src="img/book-info/PhytoDesign.jpeg" class="card-img-top img-thumbnail" alt="...">
+            </a>
+            <div class="card-body p-5">
+                <h5 class="card-title">파이토디자인(Phyto Design)</h5>
+                <p class="card-text">저자 : 파이토디자인 연구소</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <a href="bookInfo.html" class="p-5">
+              <img src="img/book-info/9 Ways to Make Confident Design Decisions.jpeg" class="card-img-top img-thumbnail" alt="...">
+            </a>
+            <div class="card-body p-5">
+                <h5 class="card-title">당당한 디자인 결정을 위한 9가지 방법</h5>
+                <p class="card-text">저자 : 톰 그리버 | 번역 : 김민성 , 곽서희</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <a href="bookInfo.html" class="p-5">
+              <img src="img/book-info/Secret Space Design of Things That Look Good.jpeg" class="card-img-top img-thumbnail" alt="...">
+            </a>
+            <div class="card-body p-5">
+                <h5 class="card-title">좋아 보이는 것들의 비밀 공간디자인</h5>
+                <p class="card-text">저자 : 김석훈</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <a href="bookInfo.html" class="p-5">
+              <img src="img/book-info/Thank you for the design.jpeg" class="card-img-top img-thumbnail" alt="...">
+            </a>
+            <div class="card-body p-5">
+                <h5 class="card-title">고마워 디자인</h5>
+                <p class="card-text">저자 : 김신</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <a href="bookInfo.html" class="p-5">
+              <img src="img/book-info/UX UI's 10 Lows of Psychology.jpeg" class="card-img-top img-thumbnail" alt="...">
+            </a>
+            <div class="card-body p-5">
+                <h5 class="card-title">UX_UI의 10가지 심리학 법칙</h5>
+                <p class="card-text">저자 : 존 야블론스키</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <a href="bookInfo.html" class="p-5">
+              <img src="img/book-info/Internal audit and risk management processes.jpeg" class="card-img-top img-thumbnail" alt="...">
+            </a>
+            <div class="card-body p-5">
+                <h5 class="card-title">내부 감사와 리스크 관리 프로세스</h5>
+                <p class="card-text">저자 : K. H. 스펜스 피켓</p>
+            </div>
+            </div>
+        </div>
+        </div>
+  </div>
+
+  <nav aria-label="Page navigation example" class="mt-5">
+    <ul class="index-pg pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" onclick="location.href='#'"><img src="img/icon/prev.png" alt="prev"></a>
+      </li>
+      <li class="page-item "><a class="page-link" onclick="location.href='Bookself.html'">1</a></li>
+              <li class="page-item"><a class="page-link" onclick="location.href='bookModify.html'">2</a></li>
+              <li class="page-item"><a class="page-link" onclick="location.href='Intro.html'">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#"><img src="img/icon/next.png" alt="next"></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="index-addbtn add-content d-grid gap-2 d-md-flex justify-content-md-end">
+    <a href="bookUpload.html"><img src="img/icon/plus-1.png" alt="글쓰기"></a>
+  </div>
+</div>
+<!--// 현재전시 이미지 -->
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

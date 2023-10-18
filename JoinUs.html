@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-us[회원가입]</title>
+    <!-- bootstrap.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        
+    <!-- fontawesome.css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>     
+        
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header" id="header">
+            <div class="left-nav">
+              <ul class="nav">
+                <li>
+                  <a href="#"> 
+                      <img src="img/icon/hamburger-1.png" alt="메뉴">
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html"> 
+                      <img src="img/icon/home-6.png" alt="홈">
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> 
+                      <img src="img/icon/calendar-3.png" alt="캘린더">
+                  </a>
+                </li>
+              </ul>              
+            </div>
+            <div class="right-nav">
+              <ul class="util clear">
+                <li>
+                  <a href="login.html"> 
+                      <img src="img/icon/user.png" alt="마이페이지">
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> 
+                      <img src="img/icon/settings-2.png" alt="설정">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> 
+        </header>
+        <div class="bg_header"></div>
+        <!-- //header -->
+
+    <!-- 회원가입 -->
+     
+
+    <div class="join-membership container mt-5">
+        <h2>회원가입</h2>
+        <div class="logo"><img src="img/icon/logo-dark.png" alt="로고"></div>
+        
+        <div class="Required-inputBox">
+            <div class="essential-element mt-2 mb-3">
+                <input type="text" class="form-control name-form" id="registName" placeholder="name" onfocus="this.placeholder=''" onblur="this.placeholder='name'">
+            </div>
+            <div class="essential-element mb-3">
+                <input type="email" class="form-control mail-form" id="registEmail" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" >
+            </div>
+            <div class="essential-element mb-3">
+                <input type="password" class="form-control pw-form" id="registPassword" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'" >
+                <p class="pw-info">숫자/문자 6글자 이상</p>
+            </div>
+        </div>
+    
+
+        <div class="dotArea">
+            <figure class="dot"><img src="img/icon/dot.png" alt="dot"></figure>
+            <figure class="dot"><img src="img/icon/dot.png" alt="dot"></figure>
+            <figure class="dot"><img src="img/icon/dot.png" alt="dot"></figure>
+            <figure class="dot"><img src="img/icon/dot.png" alt="dot"></figure>
+        </div>
+
+        <div class="Option-inputBox">
+            <div class="btn-group Gender-check">
+                <input type="radio" class="btn-check btn-man" name="options-base" id="option1" autocomplete="off" checked>
+                <label class="btn label-man"  for="option1">남</label>
+                <input type="radio" class="btn-check btn-woman" name="options-base" id="option2" autocomplete="off">
+                <label class="btn label-woman" for="option2">여</label>
+            </div>
+        
+            <div class="option-element mt-3 mb-3">            
+                <input type="date" class="form-control Birth-form" id="registBirth" placeholder="birthday" onfocus="this.placeholder=''" onblur="this.placeholder='birthday'">
+            </div>
+            <div class="option-element mb-3">
+                <input type="tel" class="form-control tel-form" id="registTel" placeholder="Tel" onfocus="this.placeholder=''" onblur="this.placeholder='Tel'" >
+                <p class="pw-info">
+                    "-"를 넣어서 입력해주세요 <br>
+                    ex) 010 - 0000 - 0000</p>
+            </div>
+            
+        </div>
+    
+        <div class="join-btn_area d-grid gap-2 col-6 mx-auto mb-3">
+            <button type="button" class="join-btn btn btn-warning">회원가입</button>
+        </div>
+
+        
+
+    </div>
+    <!-- //회원가입 -->    
+
+
+    <script src="js/setting.js"></script>    
+    <script>
+        //database 연결
+        const db = firebase.firestore(); //텍스트 중심의 데이터 저장소
+        const storage = firebase.storage(); //이미지나 오디오 저장소
+        
+
+        $('#registButton').on('click', function() {        
+            let registName = $('#registName').val();
+            let registEmail = $('#registEmail').val();
+            let registPwd = $('#registPassword').val();
+
+            firebase.auth().createUserWithEmailAndPassword(registEmail, registPwd).then((result)=> {
+                    console.log(result);
+                    console.log(result.user);
+                    result.user.updateProfile({displayName: registName})
+                    confirm('회원가입이 완료되었습니다. 로그인해주세요')
+                    //window.location.reload()
+                })
+        })
+    </script>
+</body>
+</html>

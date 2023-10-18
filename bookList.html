@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index[홈]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+<!-- 메인이미지 -->
+<body>
+  <header class="header" id="header">
+    <div class="left-nav">
+      <ul class="nav">
+        <li>
+          <a href="#"> 
+              <img src="img/icon/hamburger-1.png" alt="메뉴">
+          </a>
+        </li>
+        <li>
+          <a href="index.html"> 
+              <img src="img/icon/home-6.png" alt="홈">
+          </a>
+        </li>
+        <li>
+          <a href="#"> 
+              <img src="img/icon/calendar-3.png" alt="캘린더">
+          </a>
+        </li>
+      </ul>              
+    </div>
+    <div class="right-nav">
+      <ul class="util clear">
+        <li>
+          <a href="login.html"> 
+              <img src="img/icon/user.png" alt="마이페이지">
+          </a>
+        </li>
+        <li>
+          <a href="#"> 
+              <img src="img/icon/settings-2.png" alt="설정">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> 
+</header>
+<div class="bg_header"></div>
+<!-- //header -->
+
+    <div class="container mt-6" id="product_list">
+        <div class="product">
+            
+            <div class="container">
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb mt-4">
+                  <li class="breadcrumb-item home-btn"><a href="index.html"><img src="img/icon/home-6.png" alt=""></a></li>
+                  <li class="breadcrumb-item active bookinfo-btn" aria-current="page"><img src="img/icon/pencil.png" alt="북 Modify"> book-modify</li>
+                </ol>
+              </nav>
+
+                <form class="d-flex search-area" role="search">
+                  <input class="form-control me-2 input-group-sm search-txt" type="search" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'" aria-label="Search">
+                  <button class="btn btn-outline-warning search-btn" type="submit"><img src="img/icon/search.png" alt=""></button>
+                </form>
+
+                <div class="logo-area">
+                  <h1 class="logo"><a href="index.html"><img src="img/icon/logo-Brown_sd.png" alt="로고"></a></h1>
+                </div>
+
+                <div class="row justify-content-md-center">
+                  <div class="col-md-auto">
+                    <div class="bookCover">
+                        <img src="img/book-info/PhytoDesign.jpeg" class="img-thumbnail" alt="">
+
+                          <form name="myform-booklist" id="myform-booklist" method="post" action="./save">
+                            <fieldset>
+                                <legend></legend>
+                                <input type="radio" name="rating" value="5" id="rate1"><label for="rate1">⭐</label>
+                                <input type="radio" name="rating" value="4" id="rate2"><label for="rate2">⭐</label>
+                                <input type="radio" name="rating" value="3" id="rate3"><label for="rate3">⭐</label>
+                                <input type="radio" name="rating" value="2" id="rate4"><label for="rate4">⭐</label>
+                                <input type="radio" name="rating" value="1" id="rate5"><label for="rate5">⭐</label>
+                            </fieldset>
+                        </form>
+                        </p>  
+                    </div>
+                  </div>
+
+                  <div class="col col-lg-5 ">
+                    <div class="flex-glow-1 p-5 align-items-center">
+                        <input type="text" class="form-control mt-2" id="title" placeholder="책제목" onfocus="this.placeholder=''" onblur="this.placeholder='책제목'">
+                        <input type="text" class="form-control mt-2" id="author" placeholder="저자" onfocus="this.placeholder=''" onblur="this.placeholder='저자'">
+                        <input type="text" class="form-control mt-2" id="publisher" placeholder="출판사" onfocus="this.placeholder=''" onblur="this.placeholder='출판사'">
+                        <form class="reading-date mt-3 mb-3" id="date">
+                            읽은날짜<br>
+                            <!-- <input type="datetime-local" value="2019-09-22" min="2019-09-10" max="2019-09-25"name="reservation" class="readingStart mt-2 mb-3"> - <input type="datetime-local"  value="2019-09-22" min="2019-09-10" max="2019-09-25" name="reservation" class="readingFinish"> -->
+                            <div class="input-group input-daterange">
+                              <input type="text" class="form-control" value="2012-04-05">
+                              <span class="glyphicon glyphicon-th"></span>
+                              <div class="input-group-addon"> - </div>
+                              <input type="text" class="form-control" value="2012-04-19">
+                              <span class="glyphicon glyphicon-th"></span>
+                          </div>
+                            
+                        </form>
+                        
+                          
+                            <input type="radio" class="btn-check " name="options-base" id="option1" autocomplete="off" checked>
+                            <label class="btn"  for="option1">읽을예정</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+                            <label class="btn" for="option2">읽고있는중</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off">
+                            <label class="btn" for="option3">다읽었어요</label>
+                            <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off">
+                            <label class="btn" for="option4">reading stop</label>
+                          
+                        
+
+                        <!-- checkbox btn -->
+
+                        <!-- <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck1">종이책</label>
+                          
+                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck2">전자책</label>
+                          
+                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck3">오디오북</label>
+                          </div> -->
+                        
+                         <!-- //checkbox btn -->
+                         
+                         <!-- radio btn -->
+
+                         <div class="row">
+                           <div class="btn-group mt-4" role="group" aria-label="Basic radio toggle button group">
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                              <label class="btn btn-outline-warning" for="btnradio1">종이책</label>
+                           
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                              <label class="btn btn-outline-warning" for="btnradio2">전자책</label>
+                           
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                              <label class="btn btn-outline-warning" for="btnradio3">오디오북</label>
+                            </div>
+                         </div>
+
+                         <!-- //radio btn -->
+
+
+
+            <!--// 현재전시 이미지 -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

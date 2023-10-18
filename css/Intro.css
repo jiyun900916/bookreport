@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url('http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');/* 'Spoqa Han Sans Neo', 'sans-serif'; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');/* 'Noto Sans KR', 'sans-serif'; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');/*'DM Serif Display', 'serif'; */
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');/*'Yesteryear', 'cursive'; */
+@font-face {font-family:MalgunGothic; src:url(/fonts/MalgunGothic.eot);}
+li {list-style: none;}
+a{text-decoration: none; color: inherit;}
+button {border: none;}
+body {
+    font-family: 'Spoqa Han Sans Neo', 'Malgun Gothic','Noto Sans KR', 'sans-serif','Yesteryear', 'cursive','DM Serif Display', 'serif'; 
+    font-weight: 400;
+}
+
+.nav > li >  a  > img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.logo > a > img {width: 200px;}
+.util > li {
+    float: left; 
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.util > li > a > img {
+    width: 30px;
+}
+
+.bg_header{
+  height: 4em;
+  border-bottom: 1px solid #ccc;
+}
+/* //header */
+
+
+/* contents */
+.contents {
+    max-width: 100%;
+    height: 100vh;
+    padding:70px 20px 70px 20px;
+}
+
+.contents .inner {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+/* swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+
+/*   .swiper-slide img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  } */
+  .slide1 {
+    background:#FAF0D7;
+  }
+  .slide2 {
+    background: #F5E4D0;
+  }
+  .slide3 {
+    background: #DAC0A3;
+  }
+
+  .swiper-button-next {
+    background: url(../img/icon/next.png) no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-prev {
+    background: url(../img/icon/prev.png) no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+.swiper-pagination-bullet {
+width: 8px;
+height:8px;
+display:inline-block;
+border-radius: 50%;
+background: #65451F;
+}
+
+.intro-slide h2{
+  font-family: 'Malgun Gothic','Noto Sans KR';
+  font-size: 30px;
+  color: #65451F;
+}
+.intro-slide figure{
+width: 350px;
+height: 150px;
+overflow: hidden;
+margin: 40px auto 20px auto;
+}
+
+.intro-slide span{
+  font-family: 'Malgun Gothic','Noto Sans KR';
+  font-size: 16px;
+  color: #65451F;
+}
+.btn-click {color: #65451F;}
+.btn-click:hover {color: #C8AE7D;}
+.inner-slide1 figure{
+  background: url(../img/icon/logo-dark.png) no-repeat center/cover;}
+.inner-slide2 figure{
+  background: url(../img/icon/logo-dark.png) no-repeat center/cover;}
+.inner-slide3 figure{
+  background: url(../img/icon/logo-light.png) no-repeat center/cover;}
+  
+
+
+
+/* 상세페이지 */
+.detail-pic {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+.detail-pic img{max-width: 100%;}
+.detail-area h3 {font-size: 1.125em; color: #000;}
+.detail-area h4 {font-size: 1.1em; color: #000;}

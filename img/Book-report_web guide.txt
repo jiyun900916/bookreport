@@ -1,0 +1,281 @@
+
+
+-contents 01 Banner 
+
+banner   w : 1920px    h : 400px 
+
+font Title 45px
+badge w : 135px  h : 50px 
+badge- font 18px 
+
+
+
+
+-contents 02
+
+12 자 까지만 보이고 뒤에 ... 처리 하기 
+
+메인 폰트20px
+서브 14px Bord
+저자  14px
+
+
+벤치 마킹
+
+우피다이어리
+https://www.oopy.io/ko/stories/oopy-diary
+
+칸바
+https://www.canva.com/ko_kr/templates/s/diary/
+
+
+
+
+Book-report OPEN evnet!
+
+Book-Report 신규 회원님을 위한 이벤트.
+SNS에 Book-report 홈페이지와 SNS에 
+이용 후기를 작성해주시면 추첨을 통해 
+20명에게 스타벅스 커피기프티콘을 발송해드립니다
+
+기간  2023.10.1 (화) ~ 2023.11.25(토)
+ 
+
+----------------------------------------------------------------------------------------------------
+피드백 내용  2023.10.11 am10:40 
+
+전체적인 사이트방향성이 모호하다
+책 서점 추천 픽 홍보 하는 사이트로 전환
+
+책 다이어리는 따로 작업을 해보는 걸로  (웹디자인 작업시안)
+
+
+
+
+저장시 save for web으로 저장해서 보기 HTML + Images
+
+
+
+>Top notice 
+
+영역크기 늘리기   ok h : 50px
+글씨 16px 보다 크게  ok -> 20px
+
+
+
+
+
+>Top header 
+로고 유틸 사이즈 줄이기 -> 30px ok
+검색창 1px 로 바꾸기  -> ok
+유틸 아이콘 라인으로만 된걸로 바꾸기 (아이콘 색상이 다 들어가 있어서 너무 꽉차보인다)
+-> ok
+
+
+
+>카테고리 변경 서점 추천 픽 홍보 관련 사이트 
+
+
+
+>Contents 배너 
+배너 바탕 키우고 
+배지 크기줄이고 글씨 크기 자간 행간 줄이기 
+배지 크기 w:120 h:40
+책 가운데 정렬
+
+『』 지우기 (잘 사용 하지 않는다)
+
+
+
+
+
+
+>content04 Mobile 
+
+이미지 하나만 두고 다 날리기 (책상세페이지로)
+
+ 
+->날림 ok  quick menu 만들기작업 해야됨
+
+
+
+>contents 02 / 03
+
+contents 02 : w:450px h:600
+
+contents 03 : w:850px h:600  
+
+contents 02 book size : hight 165px
+contents 03 book size : hight 160px
+
+
+Big font : 19px 
+Title font : 16px 
+Contents font 14px
+small font 12px
+
+
+
+책장 크기 1350 x 600
+
+
+ 책, 바탕 크기 키우고 책정보 입력하기
+
+책크기 
+# naver 도서 benchimarking #
+
+* B-h:동일하게 작업시
+        h : 182px  
+
+* M-h:동일하게 작업시
+        h : 168.81px  
+
+* S-h: 동일하게 작업시 (list-menu)
+        h : 110 px 
+
+----------------------------------------------------
+
+* B-h: 책 비율대로 (큰책)
+        h : 197.41px 
+
+* S-h: 책 비율대로 (작은 책)
+        h : 147.59px 
+
+=============================
+
+#badge 
+h: 35px 
+p: 0 12px
+
+=============================
+
+
+Book-list
+
+tilte font : 16px
+desc font : 14 px
+span font: 12px color : #999
+
+
+Book contents
+
+Main copyright : 19px
+Main recomand title : 13px bord
+Main detail : 13px
+
+title font : 15px
+span font : 13px
+
+
+btn font : 13px
+
+
+
+
+>book Open event  
+
+
+화면 절반정도 크기가 오도록 줄이기 ->ok
+
+글씨 간격 자간 다시 조절 하기 ->ok
+
+
+
+
+
+> 하단 북 Shelf (독서록 책장 성격)
+
+
+책 크기 키우기  책갯수 줄이기 (8-6) 사이
+
+글씨 제목  마우스 오버시 보이도록  
+
+
+
+크게 1개~ 2개만 설명 할 수 있는 공간만들기 
+
+카테고리 별로 책 분류 해서 
+
+카테고리 제목 달기 
+
+
+
+
+
+
+
+
+
+
+교보문고 , 알라딘 기타 서점 추천픽 으로 추천 
+
+
+
+
+
+
+
+
+
+
+
+web 크기 
+1920 x 1080
+1440x900
+1024x768
+1280x800
+
+
+GSAP?
+
+2023.10.12 (목) 피드백
+contents 1 - banner
+>banner 배경 늘리기 
+
+
+>contents 2
+: contents 3 크기 에 맞춰서 높이 값 줄이기
+
+
+>contnents 3
+: 책 수량 4개로 줄이고 
+background img랑 책 크기 키우기 
+
+
+>contents 4
+: mobile phon mockup img 넣기
+
+ 
+>contents5 eventpage
+: "OPEN even!" 로고 글씨체로 바꾸기
+ 안에 contents font 색상 white/back 중하나로 바꾸기 
+ 사진 이미지 줄이기 
+
+background bg Tip
+:기하학적 도형 추상적인도형  배경 이용 하여 빈배경 이미지 밋밋하지 않게 만들기
+  들어갈 크기에 맞게 이미지 크기 맞추기
+  보케이미지 clapping mask 이용 gradient 툴이용하여 화면 가운데 포인트 넣기
+
+ctrl+B : Color Balance 조절
+ctrl+shift+B :  Auto color 조절
+ctrl+shift +L : 화이트 밸런스 조절
+ctrl+shift+A : Camera Raw Filter 조절
+
+
+선택툴로 자를 영역 선택후 
+image>crop 으로 가서 자르기
+
+-<div> background img 
+-position : fixed로 작업 하기 
+
+
+
+
+
+
+
+
+
+
+
+

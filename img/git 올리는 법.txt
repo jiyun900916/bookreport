@@ -1,0 +1,10 @@
+$ git init
+$ git add .
+$ git commit -m "dreamhanger project ver1"
+$ git branch -M main
+$ git remote add origin https://github.com/jiyun900916/dreamhanger.git
+$ git push -u origin main
+
+$ git add .
+$ git commit -m "deploy 수정"
+$ git push -u origin main

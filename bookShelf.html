@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Shelf[책장]</title>
+         <!-- bootstrap min.css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"><!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+ 
+    <link rel="stylesheet" href="css/main.css">
+     <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+         crossorigin="anonymous"></script>
+     <!-- jquery -->
+    
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>       
+         
+    
+         <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="navbar fixed-top">
+          <div class="col col-auto">
+            <ul class="nav">
+              <li>
+                <a href="#"> 
+                    <img src="img/icon/hamburger-1.png" alt="메뉴">
+                </a>
+              </li>
+              <li>
+                <a href="index.html"> 
+                    <img src="img/icon/home-6.png" alt="홈">
+                </a>
+              </li>
+              <li>
+                <a href="#"> 
+                    <img src="img/icon/calendar-3.png" alt="캘린더">
+                </a>
+              </li>
+            </ul>              
+          </div>
+          <div class="col-auto">
+            <ul class="util clear">
+              <li>
+                <a href="login.html"> 
+                    <img src="img/icon/user.png" alt="마이페이지">
+                </a>
+              </li>
+              <li>
+                <a href="#"> 
+                    <img src="img/icon/settings-2.png" alt="설정">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+    </header>
+    <div class="bg_header"></div>
+    <!--// header -->
+    <div class="container bookshelf-container">
+        <h1><a href="index.html"><img src="img/icon/logo-dark.png" alt=""></a></h1>
+        <h3 class="shelfTitle bookshelfT-1"></h3>
+        <div class="bookshelf shelf-1">
+            <ul class="book-binder binder1">
+                <li class="book book-1"><a href="bookInfo.html"><img src="img/book-info/9 Ways to Make Confident Design Decisions.jpeg" alt=""></a></li>
+                <li class="book book-2"><a href="bookInfo.html"><img src="img/book-info/Internal audit and risk management processes.jpeg" alt=""></a></li>
+                <li class="book book-3"><a href="bookInfo.html"><img src="img/book-info/PhytoDesign.jpeg" alt=""></a></li>
+            </ul>
+        </div>
+        <h3 class="shelfTitle bookshelfT-2"></h3>
+        <div class="bookshelf shelf-2">
+            <ul class="book-binder binder2">
+                <li class="book book-1"><a href="bookInfo.html"><img src="img/book-info/Secret Space Design of Things That Look Good.jpeg" alt=""></a></li>
+                <li class="book book-5"><a href="bookInfo.html"><img src="img/book-info/Thank you for the design.jpeg" alt=""></a></li>
+                <li class="book book-6"><a href="bookInfo.html"><img src="img/book-info/UX UI's 10 Lows of Psychology.jpeg" alt=""></a></li>
+            </ul>
+        </div>
+        
+        <nav aria-label="Page navigation example shelf-page" class="mt-2">
+            <ul class="index-pg pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" onclick="location.href='#'"><img src="img/icon/prev.png" alt="prev"></a>
+              </li>
+              <li class="page-item "><a class="page-link" onclick="location.href='Bookself.html'">1</a></li>
+              <li class="page-item"><a class="page-link" onclick="location.href='bookModify.html'">2</a></li>
+              <li class="page-item"><a class="page-link" onclick="location.href='Intro.html'">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><img src="img/icon/next.png" alt="next"></a>
+              </li>
+            </ul>
+          </nav>
+        
+          <div class="index-addbtn add-content d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="bookUpload.html"><img src="img/icon/plus-1.png" alt="글쓰기"></a>
+          </div>
+
+    </div>
+    
+</body>
+</html>
